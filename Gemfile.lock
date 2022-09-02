@@ -111,6 +111,7 @@ GEM
     matrix (0.4.2)
     method_source (1.0.0)
     mini_mime (1.1.2)
+    mini_portile2 (2.8.0)
     minitest (5.16.3)
     msgpack (1.5.6)
     net-imap (0.2.3)
@@ -128,7 +129,8 @@ GEM
       net-protocol
       timeout
     nio4r (2.5.8)
-    nokogiri (1.13.8-x64-mingw-ucrt)
+    nokogiri (1.13.8)
+      mini_portile2 (~> 2.8.0)
       racc (~> 1.4)
     public_suffix (5.0.0)
     puma (5.6.5)
@@ -193,8 +195,6 @@ GEM
       railties (>= 6.0.0)
     tzinfo (2.0.5)
       concurrent-ruby (~> 1.0)
-    tzinfo-data (1.2022.3)
-      tzinfo (>= 1.0.0)
     web-console (4.2.0)
       actionview (>= 6.0.0)
       activemodel (>= 6.0.0)
@@ -213,7 +213,7 @@ GEM
     zeitwerk (2.6.0)
 
 PLATFORMS
-  x64-mingw-ucrt
+  ruby
 
 DEPENDENCIES
   bootsnap
@@ -233,7 +233,7 @@ DEPENDENCIES
   webdrivers
 
 RUBY VERSION
-   ruby 3.1.2p20
+   ruby 2.7.5p203
 
 BUNDLED WITH
-   2.3.7
+   2.1.4
